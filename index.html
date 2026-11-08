@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscountIQ</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="body" id="body">
+    <nav class="navbar" id="headbox">
+        <h1 class="headerlogo" id="headerlogo">
+            <img src="./Assets/percentage-square-svgrepo-com.svg" alt="" class="logoicon" id="logoicon"> 
+            <img src="./Assets/percentage-square-svgrepo-com 2.svg" alt="" srcset="" class="darklogoicon" id="darklogoicon">&nbsp; Discount Checker
+        </h1>
+
+        <button class="darkmode" id="darkmode">
+            Dark Mode
+        </button>
+        <button class="lightmode" id="lightmode">
+            Light Mode
+        </button>
+    </nav>
+
+    <section class="mainsection">
+        <p class="calctext" id="calctext">
+            THE SIMPLE DISCOUNT CALCULATOR
+        </p>
+        <p class="newcalctext" id="newcalctext">
+            YOUR DISCOUNT, MADE SIMPLE
+        </p>
+        <h1 class="calchead" id="calchead">
+            Know your final price.
+            <br>
+            Keep more of your money.
+        </h1>
+
+        <h1 class="calcheadnew" id="calcheadnew">
+            Good savings.
+            <br>
+            Even better clarity.
+        </h1>
+        <p class="alttext" id="alttext">
+            Here’s exactly what your deal means for your wallet.
+        </p>
+        <div class="contentbox" id="contentbox">
+            <div class="newcontent" id="newcontent">
+                <div class="greentextbox" id="greentextbox">
+                   <img src="./Assets/dot-small-svgrepo-com.svg" alt="" class="dotimg">
+                   <p class="greenboxtxt">A LITTLE WIN FOR YOUR WALLET</p>  
+                </div>
+                <div class="greentextbox2" id="darktextbox">
+                   <img src="./Assets/dot-small-svgrepo-com 2.svg" alt="" srcset="" class="dotimgdark" id="dotimgdark">
+                   <p class="greenboxtxt">A LITTLE WIN FOR YOUR WALLET</p>
+                </div>
+                <h1 class="savedamount" id="savedamount">
+                    You just saved
+                </h1>
+                <p class="amount1" id="amount1">
+                    &#8377; <span class="amtvalue" id="amtvalue">500.00</span>
+                </p>
+                <p class="discountdesc" id="discountdesc">
+                    That's <span id="promovalue"></span>% of your original price staying with you.
+                </p>
+                <div class="greybox" id="greybox">
+                    <p class="para1">
+                        Your final price
+                    </p>
+                    <p class="para2" id="para2">
+                        &#8377; <span class="pricefinal" id="pricefinal">2,000.00</span>
+                    </p>
+                    <p class="para3" id="para3">
+                        Originally &#8377; <span id="originalamt">2,500.00</span> - <span id="promoval">20</span>% off
+                    </p>
+                </div>
+
+                <div class="insidebutondiv">
+                    <button class="checkprice" id="checkprice">
+                        Check another price
+                    </button>
+                    <button class="copyresult" id="copyresult">
+                        Copy result
+                    </button>
+                </div>
+            <p class="breakdownoption" id="breakdownoption">
+                View price breakdown <img src="./Assets/down-arrow-svgrepo-com.svg" alt="" srcset="" class="downarrow" id="downarrow">
+            </p>
+            <p class="breakdownoptiondark" id="breakdownoptiondark">
+                View price breakdown <img src="./Assets/down-arrow-svgrepo-com 2.svg" alt="" srcset="" class="downarrowdark" id="downarrowdark">
+            </p>
+            <p class="breakdownoption2" id="breakdownoption2">
+                View price breakdown <img src="./Assets/up-arrow-svgrepo-com.svg" alt="" srcset="" id="uparrowimg" class="uparrowimg">
+            </p>
+            <p class="breakdownoption2dark" id="breakdownoption2dark">
+                View price breakdown <img src="./Assets/up-arrow-svgrepo-com 2.svg" alt="" srcset="" id="uparrowimgdark" class="uparrowimgdark">
+            </p>
+                <div class="pricebreakdown" id="pricebreakdown">
+                    <div class="firstbreakdown">
+                        <p class="optxt" id="optxt">
+                            Original price
+                        </p>
+                        <p class="opval" id="opval">
+                            
+                        </p>
+                    </div>
+                    <div class="secondbreakdown">
+                        <p class="optxt" id="optxt2">
+                            
+                        </p>
+                        <p class="opval2" id="opval2">
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="finaldiv" id="finaldiv">
+                    <p class="fptxt" id="fptxt">
+                        Final Price
+                    </p>
+
+                    <p class="fpamount" id="fpamount">
+                            
+                    </p>
+                </div>
+            </div>
+            <p class="checkdisctxt" id="checkdisctxt">
+                Check your discount
+            </p>
+            <p class="instructionstxt" id="instructionstxt">
+                Enter a price and the percentage off.
+            </p>
+
+            <div class="inputboxes" id="inputboxes">
+                <div class="firstinput">
+                    <p class="originalprice" id="originalprice">Original Price</p>
+                    <input type="number" class="priceinput" id="priceinput" placeholder="0">
+                    <p class="beforedisc" id="beforedisc">Price before any discount</p>
+                </div>
+                <div class="secondinput">
+                    <p class="disctxt" id="disctxt">Discount</p>
+                    <input type="number" class="discountinput" id="discountinput" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%">
+                    <p class="disctxt2" id="disctxt2">From 0% to 100%</p>
+                </div>
+            </div>
+
+            <div class="optionsdiv" id="optionsdiv">
+                <div class="optionscontent">
+                    <button class="collpsbtn" id="collpsbtn">
+                        <img src="./Assets/minus-square-svgrepo-com.svg" alt="" srcset="" class="minusbtnimg" style="height: 19px;">
+                    </button>
+                    <button class="collpsbtndark" id="collpsbtndark">
+                        <img src="./Assets/minus-square-svgrepo-com.svg" alt="" srcset="" class="minusbtnimg" style="height: 19px;">
+                    </button>
+                    <button class="explandbtn" id="explandbtn">
+                        <img src="./Assets/plus-square-filled-svgrepo-com.svg" alt="" class="plusbtnimg" style="height: 25px;">
+                    </button>
+                    <button class="explandbtndark" id="explandbtndark">
+                        <img src="./Assets/plus-square-filled-svgrepo-com-2.svg" alt="" class="plusbtnimgdark" style="height: 25px;">
+                    </button>
+                    <p class="optionstxt" id="optionstxt"> More Options &nbsp; <span class="optional" id="optional">(optional)</span></p>
+                </div>
+                <div class="inputboxes2" id="inputboxes2">
+                    <div class="firstinput">
+                        <p class="originalprice">Extra coupon</p>
+                        <input type="number" class="couponinput" id="couponinput" placeholder="0">
+                    </div>
+                    <div class="secondinput">
+                        <p class="disctxt">Tax after discount</p>
+                        <input type="number" class="taxinput" id="taxinput" placeholder="0">
+                    </div>
+                </div>
+                <div class="thirdinput" id="thirdinput">
+                    <p class="disctxt">Shipping</p>
+                    <input type="number" class="shippinginput" id="shippinginput" placeholder="0">
+                </div>
+            </div>
+            <button class="calculatebtn" id="calculatebtn">
+                Calculate my savings &nbsp;<img src="./Assets/right-arrow-svgrepo-com.svg" alt="" srcset="" style="height: 25px;">
+            </button>
+        </div>
+        <p class="slogantxt" id="slogantxt">
+            A simple calculation. No sign-up. No clutter.                
+        </p>
+        <p class="newslogan" id="newslogan">
+            Your savings take center stage. Details stay one click away.
+        </p>
+    </section>
+</body>
+<script src="index.js"></script>
+</html>
